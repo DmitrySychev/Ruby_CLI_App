@@ -29,7 +29,6 @@ class CommandLineInterface
         puts "** What's your name? : **"
             input = gets.strip.capitalize
             @@client_name = input
-            #@@client_id = 
         if Client.find_by(name: @@client_name)
             client_interface
         elsif input == "Admin"
